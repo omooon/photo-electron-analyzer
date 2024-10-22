@@ -1,0 +1,22 @@
+device:
+    light_source            : 1  # LED=0, Laser=1
+    light_source_interval   : 500  # ns = 2MHz
+    #light_source_time_interval   : 2  # nsどっちかを使う
+    light_detector          : 0  # PMT=0, SiPM=1
+
+integration:
+    start_on     : 390  # ns 
+    end_on       : 420  # ns
+    off_minus    : 100  # ns
+    #積分時間見たいなパラメータがあってもいい
+    
+iteration:
+    niterations : 5
+    maxpe       : 5
+    bin_width   : 0.16      # mV*ns
+    bin_zero    : 1500
+    #bin_edge, bin_center, nbin
+
+unit:
+    volt : mV
+    time : ns
